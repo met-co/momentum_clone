@@ -25,15 +25,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 30px;
+  font-size: 22px;
+  position: fixed;
+  top: 10px;
+}
+
+.weather__item span:last-child {
+  font-size: 15px;
 }
 
 #clock {
   display: flex;
   justify-content: center;
-  font-size: 250px;
+  font-size: 180px;
   color: white;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .now-date {
@@ -46,10 +52,9 @@ body {
 #quote {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   font-size: 20px;
-  margin-top: 100px;
   color: white;
 }
 
@@ -59,23 +64,19 @@ body {
   align-items: center;
 }
 .input-name {
-  font-size: 100px;
+  font-size: 50px;
   color: white;
-}
-
-.hidden {
-  display: none;
 }
 
 .login-form__input {
   margin-top: 50px;
-  width: 800px;
+  width: 600px;
   border: none;
-  border-bottom: 10px solid white;
+  border-bottom: 5px solid white;
   background-color: inherit;
   outline: none;
   color: white;
-  font-size: 100px;
+  font-size: 50px;
 }
 
 .todo-section {
@@ -84,7 +85,6 @@ body {
   margin: 0 80px;
   color: white;
   align-items: flex-start;
-  height: 80vh;
 }
 
 .todo-form__input {
@@ -107,4 +107,30 @@ body {
 
 .todo-form__ul li {
   font-size: 40px;
+}
+
+.front-display {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-container {
+  animation: fadeIn 1.5s linear forwards;
+  height: 100vh;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
 }

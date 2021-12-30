@@ -14,44 +14,49 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="weather">
-      <div class="weather__item">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div class="time-zone">
-      <h1 id="clock"></h1>
-      <span class="now-date"></span>
-    </div>
-
-    <section class="login-section">
+    <div class="front-display">
       <span class="input-name">Hello, what's your name?</span>
-
       <form class="hidden" id="login-form">
         <input class="login-form__input" required maxlength="15" type="text" />
         <!-- <input type="submit" value="submit" /> -->
       </form>
-    </section>
-    <h1 id="greeting" class="hidden"></h1>
-    <section class="todo-section">
-      <div class="">
-        <form id="todo-form">
-          <input
-            class="todo-form__input"
-            type="text"
-            placeholder="Write a To Do and Press Enter"
-            required
-          />
-        </form>
-        <ul class="todo-form__ul" id="todo-list"></ul>
+    </div>
+    <div class="main-container hidden">
+      <div id="weather">
+        <div class="weather__item">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <!-- <span>Todo</span> -->
-    </section>
+
+      <div class="time-zone">
+        <h1 id="clock"></h1>
+        <span class="now-date"></span>
+      </div>
+
+      <section class="login-section">
+        <span class="splash-name"></span>
+      </section>
+      <h1 id="greeting" class="hidden"></h1>
+      <section class="todo-section">
+        <div class="">
+          <form id="todo-form">
+            <input
+              class="todo-form__input"
+              type="text"
+              placeholder="Write a To Do and Press Enter"
+              required
+            />
+          </form>
+          <ul class="todo-form__ul" id="todo-list"></ul>
+        </div>
+        <!-- <span>Todo</span> -->
+      </section>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </body>
 </html>
